@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cool Website</title> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+        
+    <style>
+        :root {
+            --bgdarker: #eefaff; /* Use for body */
+            --bg: #fff5fa;      /* Use for main */
+            --txt: #110228;     /* Use for text */
+            --accent: #655c8f;  /* Use for asides and links */
+            --accent2: #89c2ff; /* Use for buttons */
+            --accent3: #ffe0f3; /* Use for buttons */
+
+            --roundness: 40px;
+        }
+
+        body {
+            background-color: var(--bgdarker);
+            background-image: none;
+
+            color: var(--text);
+            font-family: "Comic Relief";
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+
+            height: 45vw;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-areas: "header header"
+            "aside main"
+            "footer footer";
+            grid-template-columns: 20vw 40vw;
+            grid-template-rows: 6vw 25vw 3vw;
+
+            background-color: var(--bg);
+            border-radius: var(--roundness);
+
+            overflow: hidden;
+        }
+
+        header {
+            grid-area: header;
+
+            padding-left: 2vw;
+
+            background-color: var(--accent);
+            color: var(--bg);
+        }
+
+        aside {
+            grid-area: aside;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            gap: 1vw;
+
+            background-color: var(--accent3);
+        }
+
+                    .links {
+                        display: grid;
+                        grid-template-areas: "auto auto";
+                        gap: 0.5vw;
+                        text-align: center;
+                    }
+
+                    .links > a {
+                        border-radius: 10px;
+                        padding: 5px;
+
+                        background-color: var(--bgdarker);
+                        color: var(--accent);
+                        text-decoration: none;
+                    }
+
+                    .links > a:hover {
+                        background-color: var(--accent2);
+
+                        color: var(--bg);
+                        text-decoration: underline wavy var(--bg);
+                    }
+
+                    .pfpContainer {
+                        width: 15vw;
+                        height: 15vw;
+                        border-radius: 20px;
+                        overflow: hidden;
+                    }
+                        #profilePicture {
+                            width: 15vw;
+                            
+                        }
+
+        main {
+            grid-area: main;
+
+            padding: 2vw;
+
+            overflow-y: scroll;
+            scrollbar-color: var(--accent2) transparent;
+        }
+
+            .blinkieHeaven {
+                display: grid;
+                grid-template-areas: "auto auto auto";
+            }
+
+        footer {
+            grid-area: footer;
+
+            background-color: var(--accent2);
+            color: var(--bg);
+
+            font-size: 0.8rem;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body> 
+    <div class="wrapper"> 
+        <header>
+            <h1>catdya.exe</h1>
+        </header>
+
+        <aside>
+            <div class="pfpContainer">
+                <img src="myPfp.jpg" id="profilePicture" alt="my profile picture">
+            </div>
+            <div class="links">
+                <a href="https://catdya.com/">Website</a>
+                <a href="#">Twitter</a>
+                <a href="https://www.neopets.com/userlookup.phtml?user=nadyaakacat">Neopets</a>
+                <a href="#">Toyhouse</a>
+            </div>
+        </aside>
+
+        <main>
+            <h2>About Me</h2>
+            <p>Hi! My name is Catdya and if you couldn't tell from my name, I really like cats! I started learning how to make websites around March of 2025. It's been almost a year! I'm a creative at heart and I love the creative process of designing a webpage and coding it all from scratch! I hope you enjoy this template and tutorial~</p>
+            <hr>
+            <h2>Let's be friends if you...</h2>
+            <ul>
+                <li>Like cats!</li>
+                <li>Like making coffee!</li>
+                <li>Draw!</li>
+            </ul>
+            <hr>
+            <div class="blinkieHeaven">
+                <img src="https://adriansblinkiecollection.neocities.org/g105.gif">
+                <img src="https://adriansblinkiecollection.neocities.org/g77.gif">
+                <img src="https://adriansblinkiecollection.neocities.org/g120.gif">
+                <img src="https://adriansblinkiecollection.neocities.org/f68.gif">
+                <img src="https://adriansblinkiecollection.neocities.org/f1.gif">
+                <img src="https://adriansblinkiecollection.neocities.org/f20.gif">
+                <img src="https://adriansblinkiecollection.neocities.org/e76.gif">
+                <img src="https://adriansblinkiecollection.neocities.org/v6.gif">
+                <img src="https://adriansblinkiecollection.neocities.org/e71.gif">
+            </div>
+        </main>
+
+        <footer>
+            <p>copyleft [your name here]</p>
+        </footer>
+
+    </div>
+</body>
+</html>
