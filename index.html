@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Website</title> 
+    <title>My Cool Website</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,29 +12,24 @@
         
     <style>
         :root {
-            --bgdarker: #eefaff; /* Use for body */
+            --bgdarker: aliceblue; /* Use for body */
             --bg: #fff5fa;      /* Use for main */
             --txt: #110228;     /* Use for text */
-            --accent: #655c8f;  /* Use for asides and links */
-            --accent2: #89c2ff; /* Use for buttons */
+            --accent: rgb(128, 88, 156);  /* Use for asides and links */
+            --accent2: lightskyblue; /* Use for buttons */
             --accent3: #ffe0f3; /* Use for buttons */
-
-            --roundness: 40px;
+            
+            --roundness: 40px; 
         }
 
         body {
-            background-color: var(--bgdarker);
-            background-image: none;
-
-            color: var(--text);
-            font-family: "Comic Relief";
-
             display: flex;
             flex-direction: column;
             justify-content: center; 
             align-items: center; 
-
-            height: 45vw;
+            background-color: var(--bgdarker);
+            color: var(--text);
+            font-family: "Comic Relief"; 
         }
 
         .wrapper {
@@ -47,29 +42,24 @@
 
             background-color: var(--bg);
             border-radius: var(--roundness);
-
             overflow: hidden;
+            margin-top: 5vw;
         }
 
         header {
             grid-area: header;
-
             padding-left: 2vw;
-
             background-color: var(--accent);
             color: var(--bg);
         }
 
         aside {
             grid-area: aside;
-
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-
             gap: 1vw;
-
             background-color: var(--accent3);
         }
 
@@ -102,18 +92,16 @@
                         border-radius: 20px;
                         overflow: hidden;
                     }
-                        #profilePicture {
-                            width: 15vw;
-                            
-                        }
+                     #profilePicture {
+                         width: 15vw; 
+                     }
 
         main {
             grid-area: main;
-
-            padding: 2vw;
-
+            padding: 0 2vw 2vw 2vw;
             overflow-y: scroll;
             scrollbar-color: var(--accent2) transparent;
+            text-align: justify;
         }
 
             .blinkieHeaven {
@@ -123,10 +111,8 @@
 
         footer {
             grid-area: footer;
-
             background-color: var(--accent2);
             color: var(--bg);
-
             font-size: 0.8rem;
             text-align: center;
         }
@@ -142,12 +128,12 @@
 
         <aside>
             <div class="pfpContainer">
-                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5ca1eb48-3dcf-4cb7-9a42-8cd53ee9e177/ded1lqc-bf06b3ae-0197-4157-a675-a80da0e52ad1.png/v1/fit/w_600,h_1800,q_70,strp/trying_to_smile_by_catdya_ded1lqc-300w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjAwMCIsInBhdGgiOiIvZi81Y2ExZWI0OC0zZGNmLTRjYjctOWE0Mi04Y2Q1M2VlOWUxNzcvZGVkMWxxYy1iZjA2YjNhZS0wMTk3LTQxNTctYTY3NS1hODBkYTBlNTJhZDEucG5nIiwid2lkdGgiOiI8PTIwMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LJ-LkBT5VqS_mZi1YP--TtTZ3a9nmkOyh_Nmd-Wj2dY" id="profilePicture" alt="my profile picture">
+                <img src="https://catdya.nekoweb.org/myPfp.jpg" id="profilePicture" alt="my profile picture">
             </div>
             <div class="links">
                 <a href="https://catdya.com/">Website</a>
                 <a href="#">Twitter</a>
-                <a href="https://www.neopets.com/userlookup.phtml?user=nadyaakacat">Neopets</a>
+                <a href="#">Neopets</a>
                 <a href="#">Toyhouse</a>
             </div>
         </aside>
@@ -159,9 +145,19 @@
             <h2>Let's be friends if you...</h2>
             <ul>
                 <li>Like cats!</li>
-                <li>Like making coffee!</li>
+                <li>Like coffee!</li>
+                <ul>
+                    <li>especially specialty coffee!</li>
+                </ul>
                 <li>Draw!</li>
             </ul>
+            <hr>
+            <h3>Things I love!</h3>
+            <ol>
+                <li>Learning new hobbies</li>
+                <li>Sewing</li>
+                <li>Hanging out with my friends</li>
+            </ol>
             <hr>
             <div class="blinkieHeaven">
                 <img src="https://adriansblinkiecollection.neocities.org/g105.gif">
